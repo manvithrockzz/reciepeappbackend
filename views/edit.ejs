@@ -1,0 +1,38 @@
+<!-- views/edit.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe maker app - Edit Recipe button</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <!-- Heading -->
+    <h1>Edit your Recipe</h1>
+
+    <!-- Form for editing recipe -->
+<form action="/<%= recipe._id %>/edit" method="post">
+    <!-- Name field -->
+    <div>
+        <label for="name">Name of recipe</label>
+        <input type="text" id="name" name="name" value="<%= recipe.name %>">
+    </div>
+    
+    <!-- Description field -->
+    <div>
+        <label for="description">Description of recipe</label>
+        <textarea id="description" name="description"><%= recipe.description %></textarea>
+    </div>
+    
+    <!-- Ingredients field -->
+    <div>
+        <label for="ingredients">Ingredients required</label>
+        <textarea id="ingredients" name="ingredients"><%= recipe.ingredients %></textarea>
+    </div>
+    
+    <!-- Submit button -->
+    <button type="submit">Save</button>
+</form>
+
+</body>
+</html>

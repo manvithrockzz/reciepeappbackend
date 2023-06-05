@@ -1,0 +1,6 @@
+/* Save the CSS code you provided in a file named styles.css in a folder named public. The folder structure should be like this: */
+public/styles.css
+/* css file, added desired fontfamilty */
+body {
+  font-family:'Courier New', Courier, monospace;
+}

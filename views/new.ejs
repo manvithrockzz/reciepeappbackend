@@ -1,0 +1,35 @@
+<!-- views/new.ejs -->
+<!-- <!DOCTYPE html>: Defines the document type as HTML5. -->
+<!DOCTYPE html>
+<!-- <html>: Represents the root element of an HTML page. -->
+<html>
+<head>
+    <!-- <link rel="stylesheet" href="styles.css">: Links an external CSS file named "styles.css" to style the web page. -->
+    <meta charset="UTF-8">
+    <title>Recipe Manager - New Recipe</title>
+    <!-- title added to recepie manager -->
+    <link rel="stylesheet" href="styles.css"> 
+    
+</head>
+<body>
+    <h1>New Recipe</h1>
+    <!-- h1 for this page -->
+    <form action="/new" method="post">
+        <div>
+            <label for="name">Name of the recipe</label> <!-- Label for recipe name input field -->
+            <input type="text" id="name" name="name"> <!-- Input field for recipe name -->
+        </div>
+        <div>
+            <label for="description">Description of recipe</label> <!-- Label for recipe description textarea -->
+            <textarea id="description" name="description"></textarea> <!-- Textarea for recipe description -->
+        </div>
+        <div>
+            <label for="ingredients">Ingredients required/used</label> <!-- Label for ingredients textarea -->
+            <textarea id="ingredients" name="ingredients"></textarea> <!-- Textarea for ingredients -->
+        </div>
+        <button type="submit">Save here</button> <!-- Submit button to save the recipe -->
+    </form>
+</body>
+</html>
+
+
